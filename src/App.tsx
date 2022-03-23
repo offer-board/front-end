@@ -4,7 +4,7 @@ import Landing from './page/landing';
 
 function App() {
     return (
-      <Landing></Landing>
+        <Landing/>
     );
 }
 

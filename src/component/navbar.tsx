@@ -1,18 +1,24 @@
 export default function Navbar() {
     return (
-        <div className="w-screen flex flex-row items-center p-1 justify-between bg-slate-800 shadow-xs">
-          <div className="ml-8 text-2xl font-bold text-slate-100 hidden md:flex">Job Board</div>
-          <span className="w-screen md:w-1/3 h-10 bg-gray-200 cursor-pointer border border-gray-300 text-sm rounded-full flex">
-            <input type="search" name="search" placeholder="Search"
-              className="flex-grow px-4 rounded-l-full rounded-r-full text-sm focus:outline-none"/>
-            <i className="fas fa-search m-1.5 mr-5 text-lg text-slate-800 w-4 h-4">
-            </i>
-          </span>
-          <div className="flex flex-row-reverse mr-4 ml-4 md:hidden">
-            <i className="fas fa-bars"></i>
-          </div >
-            <div className="flex-row-reverse mr-8 hidden md:flex cursor-pointer">
-              <div className="text-slate-100 text-center font-semibold bg-slate-700 px-4 py-2 m-2 rounded-lg">Sign In</div>
+        <div className="w-full text-gray-700 bg-white dark:text-gray-200 dark:bg-gray-800">
+            <div className="flex max-w-screen-xl mx-auto items-center justify-between flex-row px-6 lg:px-12">
+                <div className="p-4 flex flex-row items-center justify-between">
+                    <a
+                        href="/"
+                        className="text-2xl font-light tracking-widest text-gray-900 uppercase rounded-lg dark:text-white focus:outline-none focus:shadow-outline"
+                    >
+                        Job Board
+                    </a>
+                </div>
+
+                <nav className="flex-grow pb-0 flex justify-end flex-row">
+                    <a
+                        className="px-4 py-2 mt-0 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        href="#"
+                    >
+                        Login
+                    </a>
+                </nav>
             </div>
         </div>
     );
